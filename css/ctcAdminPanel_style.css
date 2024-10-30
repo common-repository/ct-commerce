@@ -1,0 +1,1753 @@
+/*Section deals with styling of spinner while loading conten*/
+@-webkit-keyframes movingSetting {
+
+
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    color: rgba(0, 133, 186);
+  }
+
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    color: rgba(0, 133, 186);
+
+  }
+}
+
+/* Standard syntax */
+@keyframes movingSetting {
+  from {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    color: rgba(0, 133, 186);
+  }
+
+  to {
+
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+    color: rgba(0, 133, 186);
+  }
+}
+
+.ctcMovingSettingIcon::before {
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -webkit-animation: movingSetting 5s infinite linear;
+  /* Safari 4.0 - 8.0 */
+  animation: movingSetting 5s infinite linear;
+
+}
+
+/*main styling of admin panel*/
+div.ctcAdminPanel {
+
+  margin-right: 15px !important;
+}
+
+
+
+
+/*this section deals with styling of the scroll bar*/
+::-webkit-scrollbar {
+  width: 12px;
+
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-clip: content-box !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(72, 72, 72, 1);
+
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+
+/*section deals with additional styling of nav tab wrapper*/
+.ctcNavTab {
+
+  border-radius: 5% 5% 5% 5%;
+   !important;
+
+
+}
+
+.ctcPendingOrderCount {
+  margin-top: -5px;
+  display: inline-block;
+  padding: 0 5px;
+  min-width: 10px;
+  height: 2.1em;
+  border-radius: 50%;
+  background-color: rgba(255, 125, 120, 0.9);
+  color: #fff;
+  font-size: 10px;
+  line-height: 21px;
+  text-align: center;
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+
+  -webkit-transition: width 0.7s;
+  /* Safari */
+  transition: width 0.7s;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+
+}
+
+
+.ctcPendingOrderCount:hover {
+
+
+  font-weight: bold;
+  border-radius: 10%;
+  -webkit-transition: width 0.7s;
+  /* Safari */
+  transition: width 0.7s;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+
+}
+
+
+.ctcSubNavTab a:hover,
+.ctcMainNavTab a:hover {
+  color: rgb(0, 128, 128, 0.9);
+  box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5s;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+}
+
+
+.ctcSubNavTab a span::before,
+.ctcMainNavTab a span::before {
+
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin-left: -5px !important;
+
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5s;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+
+
+
+
+}
+
+.ctcSubNavTab a,
+.ctcMainNavTab a {
+
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5s;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+
+
+}
+
+.ctcSubNavTab a:hover span::before,
+.ctcMainNavTab a:hover span::before {
+
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5s;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+
+
+
+}
+
+div.ctcAdminPanel h4 {
+
+  height: 5px !important;
+  margin-left: 0px !important;
+}
+
+/*section to deal with hiding thickbox content and thick box custom styling*/
+.thickBoxModalContent {
+  display: none !important;
+}
+
+.ctcModalHeader {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-weight: bolder !important;
+}
+
+#ctcUpdateCategoryButton {
+
+
+  float: left;
+  margin-left: 300px;
+  margin-top: -35px;
+}
+
+
+#ctcDeleteCategoryButton {
+  float: left !important;
+  clear: right !important;
+  margin-left: 25px !important;
+  display: inline-block;
+  margin-top: 28px !important;
+  background-color: #BA1313 !important;
+  color: white !important;
+  box-shadow: 0 1px 0 #BA1313;
+  bordor-color: #950505 !important;
+  border-color: #950505 !important;
+  text-shadow: 0 -1px 1px #950505, 1px 0 1px #950505, 0 1px 1px #950505, -1px 0 1px #950505;
+}
+
+
+
+/*styling of mostly used elements*/
+i.ctcFormComments {
+  font-weight: bold;
+  font-size: 7px;
+}
+
+/*This section deal with styling of the term and conditions part of the plugin*/
+div.ctcConditionMain {}
+
+div.ctcConditionMain span:first-child {
+
+  margin-left: 10px;
+}
+
+#ctcTermConditionsModalLink {
+  display: none !important;
+}
+
+div.ctcConditionMain h3 {
+
+  color: rgba(255, 255, 255, 1);
+}
+
+div.ctcConditionReading {
+
+  border: 2px solid #a6a6a6;
+  padding: 10px;
+  margin: 10px !important;
+  margin-top: -10px !important;
+  overflow-x: hidden !important;
+  border-radius: 5px !important;
+  -webkit-overflow-scrolling: touch;
+
+}
+
+#ctcGoToDashboard {
+  float: right;
+  margin-right: 10px;
+  text-decoration: none !important;
+  padding-bottom: 2px !important;
+  border-style: none !important;
+
+}
+
+
+#ctcGoToDashboard span {
+  font-size: 150% !important;
+  border-style: none !important;
+  width: 30px !important;
+
+}
+
+
+
+.ctcProductsTab h4 span {
+
+  margin-top: -5px !important;
+}
+
+
+#ctcHideAdminPanelTab {}
+
+
+
+div.ctcConditionsForm {
+  padding-left: 20px !important;
+
+}
+
+div.ctcTermsConditions p {
+  color: blue !important;
+}
+
+
+/*this section deals with styling of basic info tab*/
+
+div.ctcBasicInfoMain {}
+
+div.ctcBasicInfoContent {
+  padding: 15px;
+  over-flow: hidden;
+  padding: 10px;
+
+}
+
+div.ctcBasicInfoGrid {
+  width: 95%;
+}
+
+/*styling for information section admin panel*/
+div.ctcAdminNotice,
+div.ctcAdminSalesActivity,
+div.ctcAdminPanelProductChart,
+div.ctcAdminPanelImageSpec,
+div.ctcAdminPanelRestApi,
+div.ctcAdminInstruction,
+div.ctcAdminPanelShortcodes {
+  margin-bottom: 0px;
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+}
+
+div.ctcAdminNotice>div,
+div.ctcAdminSalesActivity>div,
+div.ctcAdminPanelProductChart>div,
+div.ctcAdminPanelImageSpec>div,
+div.ctcAdminPanelRestApi>div,
+div.ctcAdminInstruction>div,
+div.ctcAdminPanelShortcodes>div {
+  margin-top: -23px;
+  display: none;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 0.5%;
+  border-radius: 2%;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+div.ctcAdminSalesActivity>div,
+div.ctcAdminPanelProductChart>div {
+  border: 0;
+}
+
+div.ctcAdminNotice h4,
+div.ctcAdminSalesActivity h4,
+div.ctcAdminPanelProductChart h4,
+div.ctcAdminPanelImageSpec h4,
+div.ctcAdminPanelRestApi h4,
+div.ctcAdminInstruction h4,
+div.ctcAdminPanelShortcodes h4 {
+  font-size: 17px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  width: 180px;
+  height: 25px !important;
+  text-shadow: 1px 0px 0px rgba(255, 255, 255, 255, 1);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+
+}
+
+div.ctcAdminNotice h4:hover,
+div.ctcAdminSalesActivity h4:hover,
+div.ctcAdminPanelProductChart h4:hover,
+div.ctcAdminPanelImageSpec h4:hover,
+div.ctcAdminPanelRestApi h4:hover,
+div.ctcAdminInstruction h4:hover,
+div.ctcAdminPanelShortcodes h4:hover {
+  cursor: pointer;
+  font-size: 17px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+
+  border-radius: 0.5%;
+
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 0.1);
+  box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+div.ctcAdminNotice h4.showingContent:before,
+div.ctcAdminSalesActivity h4.showingContent:before,
+div.ctcAdminPanelProductChart h4.showingContent:before,
+div.ctcAdminPanelImageSpec h4.showingContent:before,
+div.ctcAdminPanelRestApi h4.showingContent:before,
+div.ctcAdminInstruction h4.showingContent:before,
+div.ctcAdminPanelShortcodes h4.showingContent:before {
+  font-family: dashicons;
+  content: "\f343";
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  color: rgba(142, 140, 216, 1);
+  text-shadow: 1px 0px 0px rgba(255, 255, 255, 255, 1);
+
+
+}
+
+div.ctcAdminNotice h4:before,
+div.ctcAdminSalesActivity h4:before,
+div.ctcAdminPanelProductChart h4:before,
+div.ctcAdminPanelImageSpec h4:before,
+div.ctcAdminPanelRestApi h4:before,
+div.ctcAdminInstruction h4:before,
+div.ctcAdminPanelShortcodes h4:before {
+  font-family: dashicons;
+  content: "\f347";
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  color: rgba(142, 140, 216, 1);
+  text-shadow: 1px 0px 0px rgba(255, 255, 255, 255, 1);
+}
+
+
+
+
+div.ctcAdminNotice h4:after {
+  font-family: dashicons;
+  content: "\f159";
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 22px;
+  float: right;
+  color: rgba(142, 140, 216, 1);
+
+}
+
+div.ctcAdminSalesActivity h4:after {
+  font-family: dashicons;
+  content: "\f312";
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 22px;
+  float: right;
+  color: rgba(142, 140, 216, 1);
+}
+
+div.ctcAdminPanelProductChart h4:after {
+  font-family: dashicons;
+  content: "\f185";
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 22px;
+  float: right;
+  color: rgba(142, 140, 216, 1);
+
+}
+
+div.ctcAdminPanelImageSpec h4:after {
+  font-family: dashicons;
+  content: "\f104";
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 22px;
+  float: right;
+  color: rgba(142, 140, 216, 1);
+}
+
+div.ctcAdminPanelRestApi h4:after {
+
+  font-family: dashicons;
+  content: "\f124";
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 22px;
+  float: right;
+  color: rgba(142, 140, 216, 1);
+
+}
+
+div.ctcAdminInstruction h4:after {
+  font-family: dashicons;
+  content: "\f223";
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 25px;
+  float: right;
+  color: rgba(142, 140, 216, 1);
+}
+
+div.ctcAdminPanelShortcodes h4:after {
+  font-family: dashicons;
+  content: "\f475";
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 22px;
+  float: right;
+  color: rgba(142, 140, 216, 1);
+}
+
+/*This section deals with styling of busness settings tab*/
+div.ctcBusinessSettings {}
+
+
+
+
+div.ctcBusinessSettings label {}
+
+div.ctcBusinessSettings h3 span::before {
+  margin-top: -5px !important;
+  margin-left: -10px !important;
+
+}
+
+div.ctcBusinessSettings h3 {}
+
+div.ctcBusinessSettings input {}
+
+div.ctcBusinessSettings label::before {
+
+  white-space: pre !important;
+}
+
+#ctcBusinessSettingsButton {
+  float: left !important;
+  clear: right !important;
+
+}
+
+tr.ctcBusinessSettingContact {
+  height: 20px !important;
+}
+
+.ctcBusinessLogoSetting {
+
+  height: 50px;
+
+}
+
+.ctcBusinessLogoSetting span img {
+  margin-left: 20px !important;
+  height: 50px;
+  width: 50px;
+  margin-top: -8px;
+
+}
+
+#ctcBusinessLogoMedia {
+  float: left;
+  font-size: 20px !important;
+  text-decoration: none;
+  height: auto;
+  width: auto;
+
+}
+
+#ctcBusinessLogo {
+  margin-top: -2px;
+
+}
+
+#ctcBusinessLogo img {
+  width: 50px;
+  height: 50px;
+
+}
+
+#ctcStripeBusinessLogo {}
+
+#ctcBusinessLogoMedia::before {
+  font-family: dashicons;
+  content: "\f128";
+
+}
+
+/*styling for billing setting sub tab*/
+.form-table {
+  display: block;
+  width: 550px;
+  max-width: 80%;
+  position: realtive;
+  margin-left: 5px;
+
+}
+
+.form-table h5 {
+  display: block;
+}
+
+.form-table h5 span {
+  margin-top: -2px;
+}
+
+.row {
+  display: block;
+  width: 550px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  height: 40px;
+  position: relative;
+}
+
+.categoryRow {
+
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+  position: relative;
+}
+
+.left,
+.right {
+  display: inline-block;
+  position: relative;
+
+}
+
+.left {
+
+  float: left;
+  width: 220px;
+  max-width: 35%;
+
+}
+
+
+.right {
+
+  float: left;
+  width: 270px;
+  max-width: 65%;
+  margin-bottom: 5px;
+}
+
+.right input[type=number] {
+
+  width: 70px;
+
+}
+
+.right span input {
+  margin-top: -4px;
+
+
+}
+
+.right span {
+
+  margin-top: 5px;
+  font-size: 8px;
+  display: inline-block;
+  clear: left;
+  margin-right: -24px;
+  margin-left: 5px;
+}
+
+}
+
+/*Styiling for shipping settings*/
+#ctcShippingInfoSetting h4 {
+
+  font-family: dashicons;
+  content: "\f132";
+}
+
+.ctcSelfDeliverCharge input {
+
+  width: 50px !important;
+}
+
+/*this section deals with css of products tab*/
+#ctcProductsTab h3 span {
+
+  margin-top: -4px !important;
+}
+
+#ctcProductsTab h3 {
+  margin-top: 1px !important;
+
+}
+
+/*styling of products sub category tab*/
+.ctcAddProductCategory {
+
+  overflow: scroll !important;
+}
+
+.ctcCategoryFormTable {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+#ctcAddProductCategory h4 span {
+
+  margin-top: -2px !important;
+}
+
+#ctcProductCategoryList {}
+
+#ctcProductCategoryList h4 span {
+  margin-top: -2px !important;
+
+}
+
+
+
+}
+
+#ctcProductCategoryGrid {
+
+
+  border-radius: 25px;
+}
+
+div.ctcProductCategoryGrid {
+
+  padding-right: 15px !important;
+  max-width: 95%;
+
+
+
+}
+
+.ctcOrderRowHeader,
+.ctcProductRowHeader,
+.ctcProductCategoryGridHeader {
+  height: 50px;
+  font-size: 20px;
+  text-align: center !important;
+}
+
+.ctcProductRowHeader th,
+.ctcProductCategoryGridHeader th {
+  padding-left: 5px !important;
+  font-weight: bold;
+}
+
+
+.ctcProductCategoryGridHeader th:first-child {
+  width: 150px !important;
+}
+
+#ctcCategoyListUpdate {
+
+  width: 52px !important;
+  padding: 5px !important;
+
+}
+
+#ctcProductCategoryRow td:last-child {}
+
+#ctcProductCategoryRow td:last-child a span {}
+
+
+
+div.ctcProductCategoryGridHeader {}
+
+div.ctcProductCategoryGridHeader span {}
+
+div.ctcProductCategoryGridHeader span:first-child {}
+
+
+div.ctcProductCategoryGridHeader span:last-child {}
+
+#ctcUpdateCategoryForm {
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-left: 5%;
+}
+
+/*This section deals with styling of add products subatab */
+#ctcAddProductMain {
+
+
+  max-width: 95%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+
+}
+
+.ctcAddProductFormTable {
+  display: table;
+  padding-right: 20px;
+  border-spacing: 5px;
+  /*cellspacing:poor IE support for  this*/
+  display: block;
+  clear: both;
+  border-radius: 20px;
+}
+
+.ctcAddProductLeft {
+
+  float: left;
+  width: 495px;
+  max-width: 90%;
+
+
+
+}
+
+.ctcAddProductRight {
+  float: left;
+  width: 495px;
+  max-width: 90%;
+
+
+}
+
+.ctcProductFormRow {
+  display: table-row;
+  width: auto;
+}
+
+.ctcProductFormColumn {
+  float: left;
+  /*fix for  buggy browsers*/
+  display: table-column;
+  width: 180px;
+  max-width: 90%;
+
+}
+
+.ctcProductFormColumn label {
+
+  margin-left: 5px;
+  font-weight: bold;
+
+
+}
+
+.ctcAddProductTextareaLable {
+
+  margin-top: 80px;
+}
+
+#ctcAvilableProducts {
+  color: black;
+
+}
+
+#ctcAddProductButton {
+
+  margin-top: 10px !important;
+  margin-bottom: 5px;
+  margin-left: 80%;
+
+}
+
+#ctcPrimaryImageLibrary {
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  margin-righ: 50px;
+}
+
+
+input.ctcProductFormDimension {
+
+  width: 80px;
+}
+
+span.ctcPrimaryPicThumb img {
+  float: left;
+
+  margin-top: 4px;
+  margin-left: 16px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  -webkit-transition: width 3s, height 4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 3s, height 4s;
+
+}
+
+
+
+
+#ctcAdditionalImageLibrary {
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+
+
+.ctcAdditionaImages {
+  display: none;
+  float: left;
+  height: 120px;
+  width: 235px;
+  margin-left: 50px;
+  margin-top: -20px;
+
+}
+
+.ctcImgAlbum img {
+  margin-left: -10px;
+  border: 1px solid white;
+  float: left;
+}
+
+#ctcAddVideoLibrary {
+  margin-left: 5px;
+  float: left;
+  text-decoration: none;
+}
+
+
+
+
+#ctcVideoThumb {
+  margin-top: -17px;
+  margin-left: 40px;
+  height: 160;
+  width: 210px;
+  -webkit-transition: width 3s, height 4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 3s, height 4s;
+  border: 1px solid white;
+}
+
+/* styling for product display list*/
+#ctcProductsListTab h4 span {
+  margin-top: -2px !important;
+
+}
+
+.ctcPurgedProductPic img,
+.ctcProductPrimaryPic img {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+
+.ctcProductRow {
+  display: table-row;
+  width: auto;
+}
+
+.ctcProductColumn {
+
+  max-width: 90%;
+
+
+}
+
+.ctcOrderListHeader,
+.ctcProductListHeader {
+  padding-right: 10px;
+}
+
+.ctcProductListHeader h4 {
+  float: left;
+  display: inline-block;
+  clear: right;
+}
+
+.ctcTablenav {
+  /*margin-left:870px;*/
+  position: absolute !important;
+
+  display: inline-block;
+
+
+  right: 15px;
+}
+
+
+.ctcTablenav-pages {
+  margin: 1em 0;
+}
+
+
+.ctcProductTableOther {
+  display: table;
+  padding-right: 20px;
+  border-spacing: 5px;
+  /*cellspacing:poor IE support for  this*/
+  display: block;
+  clear: both;
+  margin-left: 3%;
+}
+
+.ctcProductRowOther {
+  display: table-row;
+  border: 1px solid white;
+}
+
+.ctcProductColumnOther {
+
+  float: left;
+  /*fix for  buggy browsers*/
+  display: table-column;
+
+}
+
+.ctcProductRowOther div:first-child {
+  width: 150px;
+  max-width: 90%;
+
+
+}
+
+.ctcProductColumnOther img {
+  height: 50px;
+  width: 50px;
+}
+
+#ctcVideoThumbOtherInfo {
+
+
+  height: 160;
+  width: 210px;
+  -webkit-transition: width 3s, height 4s;
+  transition: width 3s, height 4s;
+  border: 1px solid white;
+}
+
+
+#ctcAddVideoLibrary {
+  margin-left: 5px;
+  float: left;
+  text-decoration: none;
+}
+
+#ctcPrimaryImageLibraryUpdate {
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  margin-righ: 50px;
+
+}
+
+span.ctcPrimaryPicThumbUpdate img {
+  float: left;
+  margin-top: 4px;
+  margin-left: 25px;
+  height: 70px;
+  width: 70px;
+  -webkit-transition: width 3s, height 4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 3s, height 4s;
+
+}
+
+span.ctcPrimaryPicThumbUpdate img:hover {}
+
+#ctcAdditionalImageLibraryUpdate {
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+
+div.ctcAdditionaImagesUpdate {
+
+  float: left;
+  height: auto;
+  width: 235px;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+#ctcAddVideoLibraryUpdate {
+  text-decoration: none;
+
+}
+
+#ctcVideoThumbUpdate {
+
+  margin-top: -17px;
+  margin-left: 48px;
+  height: 160;
+  width: 210px;
+  -webkit-transition: width 3s, height 4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 3s, height 4s;
+  border: 1px solid white;
+
+}
+
+#ctcAddAvilableProduct::before,
+#ctcAddAvilableProductUpdateForm::before {
+  float: left;
+  text-decoration: none;
+  margin-left: 10%
+}
+
+#ctcRemoveAvilableProduct::before,
+#ctcRemoveAvilableProductUpdateForm::before {
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: -30px;
+}
+
+#ctcAddAvilableProduct:hover::before,
+#ctcAddAvilableProductUpdateForm:hover::before {
+  font-size: 25px;
+}
+
+#ctcRemoveAvilableProduct:hover::before,
+#ctcRemoveAvilableProductUpdateForm:hover::before {
+  color: red;
+  font-size: 22px;
+  z-index: 100;
+  margin-top: -5px;
+}
+
+
+#ctcAddVideoLibraryUpdate span {
+  margin-left: 8px;
+}
+
+div.ctcUpdateDeleteProductButton {
+  max-width: 81%;
+  display: block;
+}
+
+div.ctcUpdateDeleteProductButton span:first-child {
+  float: left;
+  margin-left: 5%;
+}
+
+div.ctcUpdateDeleteProductButton span:last-child {
+  float: right;
+  margin-right: 5%;
+}
+
+#ctcUpdateProductButton {
+
+  display: inline-block;
+  float: right !important !;
+  clear: left !important;
+  margin-left: 168px !important;
+  margin-top: 20px !important;
+
+
+}
+
+/*Styling section for purged products row*/
+
+#ctcPurgeProductButton {
+  float: left !important;
+  clear: right !important;
+  margin-left: 25px !important;
+  display: inline-block;
+  margin-top: 20px !important;
+  background-color: #BA1313 !important;
+  color: white !important;
+  box-shadow: 0 1px 0 #BA1313;
+  bordor-color: #950505 !important;
+  border-color: #950505 !important;
+  text-shadow: 0 -1px 1px #950505, 1px 0 1px #950505, 0 1px 1px #950505, -1px 0 1px #950505;
+
+}
+
+#ctcPurgedProductPutBack {
+
+  width: 70px;
+}
+
+#ctcPurgedProductPrice {
+  width: 80px;
+}
+
+#ctcPurgedProductName {
+  width: 120px;
+}
+
+#ctcPurgedProductImage {
+  width: 75px;
+}
+
+#ctcPurgedProductCategory {
+  width: 90px;
+}
+
+#ctcAddPurgedProduct span {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+
+}
+
+/*This section deals with discount  tab*/
+.ctcAddDiscountFormTable {
+  display: table;
+  padding-right: 20px;
+  border-spacing: 5px;
+  display: block;
+  clear: both;
+
+}
+
+.ctcAddDiscountRow {
+  display: table-row;
+  width: auto;
+
+}
+
+
+.ctcAddDiscountColumn {
+  float: left;
+  display: table-column;
+  width: 160px;
+  max-width: 90%;
+}
+
+.ctcAddDiscountColumnRight {
+  float: left;
+  display: table-column;
+  max-width: 90%;
+  width: 270px;
+}
+
+.ctcCouponImageLibrary {
+
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+
+}
+
+#ctcDiscountProductsList {
+  width: 30%;
+}
+
+.ctcDiscountThumb img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+span.ctcDiscountPicThumb img {
+  float: left;
+
+  margin-top: 4px;
+  margin-left: 16px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  -webkit-transition: width 3s, height 4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 3s, height 4s;
+
+}
+
+#ctcUpdateDiscountModalConent {
+  margin-left: 5%;
+
+}
+
+
+
+#ctcDiscountNameList {
+
+  width: 15%;
+}
+
+#ctcDiscountPercentOff,
+#ctcDiscountAmountList {
+
+  width: 9%;
+
+}
+
+#ctcDiscountTypeList,
+#ctcDiscountEndDateList,
+#ctcDiscountStartDateList {
+
+  width: 12%;
+}
+
+#ctcPromoCodeList {
+  width: 14%;
+}
+
+#ctcDiscountUpdateList {
+
+  width: 8%;
+
+}
+
+#ctcDiscountAplicableProductsName {
+  height: 70px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+a.ctcDiscountThumb img {
+
+  margin-top: 10px;
+}
+
+span.ctcDiscountPicThumbUpdate img {
+  margin-left: 16px;
+  margin-top: 4px;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: width 3s, height 4s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 3s, height 4s;
+
+}
+
+
+span.ctcDiscountPicThumbUpdate img:hover {}
+
+
+
+.ctcCouponImageLibraryUpdate {
+
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  overflow-x: hidden;
+
+}
+
+
+
+div.ctcUpdateDeleteDiscountButton {
+
+  margin-top: 200px;
+}
+
+#ctcUpdateDiscountButton {
+
+  display: inline-block;
+  float: right !important !;
+  clear: left !important;
+  margin-left: 120px !important;
+  margin-bottom: 30px !important;
+
+
+
+}
+
+/*Styling section for purged products row*/
+
+#ctcDeleteDiscountButton {
+  float: left !important;
+  clear: right !important;
+  margin-left: 25px !important;
+  display: inline-block;
+  margin-top: 28px !important;
+  background-color: #BA1313 !important;
+  color: white !important;
+  box-shadow: 0 1px 0 #BA1313;
+  bordor-color: #950505 !important;
+  border-color: #950505 !important;
+  text-shadow: 0 -1px 1px #950505, 1px 0 1px #950505, 0 1px 1px #950505, -1px 0 1px #950505;
+
+}
+
+
+.ctcTablenavOrdersTab {
+
+  margin-top: -35px !important;
+
+}
+
+
+#ctcProcessRefundButton {
+
+
+  display: block;
+  float: right;
+  margin-right: 23%;
+}
+
+
+
+#ctcOrderList table thead tr th {
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.ctcPurchaseDetailInfo {
+  margin-left: 10%;
+}
+
+.ctcRefundFormContainer {
+  margin-left: 10%;
+}
+
+/*styling for category snapshot chart*/
+.ctcAdminPanelProductChart {
+  border: none !important;
+
+}
+
+div.ctcProductPreviewChart {}
+
+
+div.ctcProductPreviewChart ul {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 60px !important;
+  border-left: 2px solid rgba(0, 0, 0, 1) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 1) !important;
+  width: 80%;
+  height: 80%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+.ctcProductPreviewChart li {}
+
+.ctcChartBar {
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 25px;
+  background-color: rgba(255, 125, 120, 1);
+  overflow-x: visible;
+  padding-top: auto;
+  padding-bottom: auto;
+  border-left: 1px solid rgba(255, 125, 120, 1);
+  padding-top: 10px;
+
+  -webkit-animation: animateSlideIn 0.5s linear;
+  animation: animateSlideIn 0.5s linear;
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  border-radius: 2%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.ctcChartBar:hover {
+  border-radius: 5px 4px 8px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-transition: width 0.5s;
+  /* Safari */
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+
+}
+
+.ctcChartBar::before {
+  content: attr(data-product-precent)"%";
+  margin-left: -50px !important;
+
+}
+
+.ctcChartBar::after {
+  content: attr(data-product-name);
+  text-align: right !important;
+  float: right;
+  margin-right: -70px;
+  clear: left;
+}
+
+
+
+.ctcProductPreviewChart ul li font {
+  text-align: center;
+}
+
+.ctcProductPreviewChart ul li font:first-child {}
+
+.ctcProductPreviewChart ul li font:last-child {}
+
+
+.ctcSalesReportList>ul {
+  margin-left: 10%;
+  margin-right: auto;
+  display: block;
+
+}
+
+.ctcSalesReportList>ul li {
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  font-size: 20px;
+  overflow-x: visible;
+  height: 28px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  border-left: 20px solid rgba(142, 140, 216, 1);
+  padding-left: 10px;
+  width: 500px;
+  max-width: 70%;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.ctcSalesReportList>ul li::before {
+  font-family: dashicons;
+  content: "\f122";
+
+}
+
+.ctcSalesReportList>ul li:hover {
+  -webkit-transition: width 0.5s;
+  transition: width 0.5;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.ctcSalesReportList>ul li span:last-child font,
+.ctcSalesReportList>ul li a {
+
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: rgba(142, 140, 216, 1);
+  color: #fff;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  text-decoration: none !important;
+  font-weight: bold;
+  padding-top: 2px;
+}
+
+.ctcSalesReportList>ul li span:last-child font:hover,
+.ctcSalesReportList>ul li a:hover {
+
+  font-weight: bold;
+  border-radius: 10%;
+  -webkit-transition: width 0.7s;
+  /* Safari */
+  transition: width 0.7s;
+  transition: 0.7s ease;
+  -webkit-transition: 0.7s ease;
+  -moz-transition: 0.7s ease;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ctcSalesReportList>ul li::before {
+
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ctcSalesReportList>ul li i {
+
+  font-size: 15px;
+
+}
+
+
+
+
+/*animation for page load*/
+@-webkit-keyframes animateSlideIn {
+  0% {
+    height: 0px;
+    margin-left: -40%;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  50% {
+
+    margin-right: -20%;
+
+  }
+
+  100% {
+
+
+    margin-left: 0%;
+
+  }
+}
+
+@keyframes animateSlideIn {
+  0% {
+    height: 0px;
+    margin-left: -40%;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  50% {
+
+    margin-right: -20%;
+
+  }
+
+  100% {
+
+
+    margin-left: 0%;
+
+  }
+}
+
+
+
+/*animation for page load*/
+@-webkit-keyframes animateComponentSlide {
+  0% {
+
+    margin-left: -40%;
+    opacity: 0;
+    transform: rotate(5deg);
+
+
+  }
+
+  50% {
+
+    margin-right: -20%;
+    transform: rotate(10deg);
+  }
+
+  100% {
+
+
+    margin-left: 0%;
+    transform: rotate(15deg);
+
+  }
+}
+
+@keyframes animateComponentSlide {
+  0% {
+
+    margin-left: -40%;
+    opacity: 0;
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
+  50% {
+
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg)
+  }
+
+  100% {
+
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg) margin-left:0%;
+
+  }
+}
